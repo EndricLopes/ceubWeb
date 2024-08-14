@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoStart - Soluções Sustentáveis</title>
+    <title>Ecologyk - Soluções Sustentáveis</title>
     <style>
         /* Estilo básico */
         body {
@@ -47,8 +47,9 @@
             display: block;
         }
         .produto img, .membro img {
-            max-width: 100%;
-            height: auto;
+            width: 50%; /* Ajusta a largura para preencher o contêiner */
+            height: 50%; /* Define uma altura fixa */
+            object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
         }
         .preco {
             font-size: 1.2em;
@@ -77,7 +78,7 @@
 </head>
 <body>
     <header>
-        <h1>EcoStart</h1>
+        <h1>Ecologyk</h1>
         <nav>
             <ul>
                 <li><a onclick="navigateTo('home')">Home</a></li>
@@ -92,18 +93,19 @@
         <h2>Nossas Soluções Sustentáveis</h2>
         
         <div class="produto">
-            <img src="https://via.placeholder.com/600x300?text=Imagem+do+Produto+1" alt="Produto Sustentável 1">
-            <h3>Produto Sustentável 1</h3>
-            <p>Descrição detalhada do produto sustentável, explicando suas características e benefícios. Este produto é ideal para quem busca reduzir o impacto ambiental com qualidade.</p>
-            <p class="preco">R$ 199,00</p>
+            <img src="images/ecobag.jpg" alt="Produto Sustentável 1">
+            <h3>EcoBag Logyk</h3>
+            <p>Ecobag sustentável. Este produto é ideal para quem busca reduzir o impacto ambiental com qualidade.</p>
+            <p class="preco">R$ 799,00</p>
             <button onclick="adicionarAoCarrinho('Produto Sustentável 1')">Adicionar ao Carrinho</button>
         </div>
         
+        <br/>
         <div class="produto">
-            <img src="https://via.placeholder.com/600x300?text=Imagem+do+Produto+2" alt="Produto Sustentável 2">
-            <h3>Produto Sustentável 2</h3>
+            <img src="images/DelMontain.jpg" alt="Produto Sustentável 2">
+            <h3>Del Montain</h3>
             <p>Outro produto inovador que combina sustentabilidade e eficiência. Feito com materiais recicláveis, é perfeito para o seu dia a dia.</p>
-            <p class="preco">R$ 249,00</p>
+            <p class="preco">R$ 889,90</p>
             <button onclick="adicionarAoCarrinho('Produto Sustentável 2')">Adicionar ao Carrinho</button>
         </div>
     </div>
@@ -112,17 +114,17 @@
     <div id="equipe" class="container">
         <h2>Conheça a Nossa Equipe</h2>
         <div class="membro">
-            <img src="https://via.placeholder.com/150" alt="Foto do Membro 1">
+            <img src="images/imagemteste4.jpg" alt="Foto do Membro 1">
             <h3>Ana Silva</h3>
             <p>CEO & Fundadora</p>
         </div>
         <div class="membro">
-            <img src="https://via.placeholder.com/150" alt="Foto do Membro 2">
+            <img src="images/imagemTeste1.avif" alt="Foto do Membro 2">
             <h3>João Souza</h3>
             <p>CTO & Co-Fundador</p>
         </div>
         <div class="membro">
-            <img src="https://via.placeholder.com/150" alt="Foto do Membro 3">
+            <img src="images/imagemTeste3.jpg" alt="Foto do Membro 3">
             <h3>Maria Oliveira</h3>
             <p>CMO & Co-Fundadora</p>
         </div>
