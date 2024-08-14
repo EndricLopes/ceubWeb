@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecologyk - Soluções Sustentáveis</title>
     <style>
-        /* Estilo básico */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -47,9 +46,9 @@
             display: block;
         }
         .produto img, .membro img {
-            width: 50%; /* Ajusta a largura para preencher o contêiner */
-            height: 50%; /* Define uma altura fixa */
-            object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+            width: 50%;
+            height: 50%; 
+            object-fit: cover;
         }
         .preco {
             font-size: 1.2em;
@@ -88,7 +87,6 @@
         </nav>
     </header>
 
-    <!-- Página Home (Produtos) -->
     <div id="home" class="container active">
         <h2>Nossas Soluções Sustentáveis</h2>
         
@@ -110,7 +108,6 @@
         </div>
     </div>
 
-    <!-- Página Equipe -->
     <div id="equipe" class="container">
         <h2>Conheça a Nossa Equipe</h2>
         <div class="membro">
@@ -130,7 +127,6 @@
         </div>
     </div>
 
-    <!-- Página Contato -->
     <div id="contato" class="container">
         <h2>Cadastre-se para saber mais</h2>
         <form action="processar-inscricao.php" method="post">
@@ -147,22 +143,18 @@
     </div>
 
     <footer>
-        <p>© 2024 EcoStart. Todos os direitos reservados.</p>
+        <p>© 2024 Ecologyk. Todos os direitos reservados.</p>
     </footer>
 
     <script>
-        // Função que exibe um alert ao adicionar um produto ao carrinho
         function adicionarAoCarrinho(produto) {
             window.alert(produto + " foi adicionado ao carrinho!");
         }
 
-        // Função para navegação entre as seções
         function navigateTo(section) {
-            // Esconde todas as seções
             const containers = document.querySelectorAll('.container');
             containers.forEach(container => container.classList.remove('active'));
 
-            // Mostra apenas a seção escolhida
             const activeContainer = document.getElementById(section);
             activeContainer.classList.add('active');
         }
